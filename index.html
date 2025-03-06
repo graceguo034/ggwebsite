@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeyang Grace Guo | Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4a86e8;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4a86e8;
+        }
+        
+        .landing-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(173, 216, 230, 0.6), rgba(135, 206, 235, 0.6));
+            z-index: -1;
+        }
+        
+        .content-box {
+            background-color: rgba(173, 216, 230, 0.3);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 700px;
+            border: 1px solid rgba(255,255,255,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: #1e3a8a;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #1e3a8a;
+        }
+        
+        .enter-btn {
+            display: inline-block;
+            background-color: #4a86e8;
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .enter-btn:hover {
+            background-color: transparent;
+            border-color: #4a86e8;
+            color: #1e3a8a;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .name {
+            color: #1e3a8a;
+            font-weight: 700;
+        }
+        
+        .profile-image {
+            margin-bottom: 20px;
+        }
+        
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Yeyang Grace Guo</a>
+            <ul class="nav-links">
+                <li><a href="education.html">My Experience</a></li>
+                <li><a href="gallery.html">My Photo Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="landing-container">
+        <video autoplay muted loop class="video-background">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video tags.
+        </video>
+        <div class="overlay"></div>
+        <div class="content-box">
+            <div class="profile-image">
+                <img src="con1.jpg" alt="Yeyang Grace Guo">
+            </div>
+            <h1>Welcome to My World</h1>
+            <p>Hello, I'm <span class="name">Yeyang Grace Guo</span>. I transform data into insights and capture moments through my lens. I'm passionate about finding the stories hidden in numbers and freezing time with my camera. This is where art meets analysis, where creativity converges with precision.</p>
+            <a href="content.html" class="enter-btn">Explore My Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>

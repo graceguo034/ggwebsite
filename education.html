@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeyang Grace Guo | Education</title>
+    <style>
+        :root {
+            --primary: #3a6ea5;
+            --secondary: #c0d6df;
+            --accent: #ff6b6b;
+            --light: #f7f9fb;
+            --dark: #344055;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-links a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        /* Content Section */
+        .content-section {
+            padding: 120px 0 80px;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .education-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .education-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .education-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .education-header h2 {
+            font-size: 1.5rem;
+        }
+        
+        .education-year {
+            font-size: 1.1rem;
+            background-color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        
+        .education-content {
+            padding: 25px;
+        }
+        
+        .university {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .education-details {
+            margin-bottom: 20px;
+        }
+        
+        .skills-section {
+            margin-top: 15px;
+        }
+        
+        .skills-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 0 20px;
+            margin-top: 80px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-col h3 {
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 20px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .education-year {
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Yeyang Grace Guo</a>
+            <ul class="nav-links">
+                <li><a href="education.html" class="active">My Experience</a></li>
+                <li><a href="gallery.html">My Photo Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <h1 class="page-title">My Educational Journey</h1>
+            
+            <div class="education-container">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h2>Master of Science in Information Systems</h2>
+                        <span class="education-year">2024 - 2025</span>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="university">University of Washington, Seattle.</h3>
+                        <p class="education-details">My graduate studies focus on information systems management, Machine Learning and Business Intelligence. I've developed advanced skills in transforming complex data into actionable insights for organizations.</p>
+                        <p>Key coursework includes Advanced Database Management, Machine Learning, Business Analytics, and Cybersecurity.</p>
+                        
+                        
+                        <div class="skills-section">
+                            <h4 class="skills-title">Key Skills Developed:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">Data Analytics</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Business Intelligence</span>
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Cybersecurity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <h2>Bachelor of Business Administration in Business Analytics and Marketing</h2>
+                        <span class="education-year">2019 - 2023</span>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="university">Seattle University, Seattle.  </h3>
+                        <p class="education-details">My undergraduate studies provided me with a strong foundation in business principles, Marketing, and information systems. </p>
+                        <p>My capstone project involved analyzing customer behavior patterns for an e-commerce platform</p>
+                        
+                        <div class="skills-section">
+                            <h4 class="skills-title">Key Skills Developed:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">Statistical Analysis</span>
+                                <span class="skill-tag">Financial Modeling</span>
+                                <span class="skill-tag">Market Research</span>
+                                <span class="skill-tag">Data-Driven Decision Making</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Business Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <h2>Professional Certifications</h2>
+                        
+                    </div>
+                    <div class="education-content">
+                        <p class="education-details">To complement my formal education, I've pursued several professional certifications to enhance my technical skills and industry knowledge.</p>
+                        
+                        <ul style="margin-left: 20px; margin-bottom: 20px;">
+                            <li>Microsoft Certified: Data Analyst Associate (2023)</li>
+                            <li>Google Analytics Certification (2022)</li>
+                            <li>IBM Data Science Professional Certificate (2021)</li>
+                        </ul>
+                        
+                        <div class="skills-section">
+                            <h4 class="skills-title">Key Skills Certified:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Python for Data Science</span>
+                                <span class="skill-tag">Google Analytics</span>
+                                <span class="skill-tag">Machine Learning Fundamentals</span>
+                                <span class="skill-tag">Data Warehousing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Email</a>
+        </div>
+        <p>&copy; 2025 Yeyang Grace Guo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
